@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎓 Student Management System</h1>
+
+  <div class="form-container">
+    <input type="text" id="roll" placeholder="Roll Number">
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="blood" placeholder="Blood Group">
+    <input type="text" id="contact" placeholder="Contact Number">
+    <input type="text" id="college" placeholder="College Name">
+    <button onclick="addStudent()">Add Student</button>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="searchRoll" placeholder="Enter Roll Number to Search">
+    <button onclick="searchStudent()">Search</button>
+  </div>
+
+  <h2>📋 Student Records</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Blood Group</th>
+        <th>Contact</th>
+        <th>College</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="studentTable"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
